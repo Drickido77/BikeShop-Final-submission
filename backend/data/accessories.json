@@ -1,0 +1,74 @@
+{
+    "accessories": [
+      {
+        "id": "a001",
+        "name": "Premium Bike Helmet",
+        "category": "Accessories",
+        "price": 49.99,
+        "description": "Lightweight and durable safety helmet with adjustable fit",
+        "specifications": {
+          "material": "Polycarbonate",
+          "weight": "280g",
+          "certification": "CPSC"
+        },
+        "inStock": true,
+        "imageUrl": "/images/premium-helmet.jpg"
+      },
+      {
+        "id": "a002",
+        "name": "Water Bottle & Cage",
+        "category": "Accessories",
+        "price": 19.99,
+        "description": "High-capacity water bottle with mounting cage",
+        "specifications": {
+          "capacity": "750ml",
+          "material": "BPA-free plastic",
+          "cageMaterial": "Aluminum"
+        },
+        "inStock": true,
+        "imageUrl": "/images/water-bottle.jpg"
+      },
+      {
+        "id": "a003",
+        "name": "LED Bike Light Set",
+        "category": "Accessories",
+        "price": 29.99,
+        "description": "Rechargeable front and rear lights for night riding",
+        "specifications": {
+          "brightness": "300 lumens",
+          "batteryLife": "6 hours",
+          "waterproof": "IPX5"
+        },
+        "inStock": true,
+        "imageUrl": "/images/led-lights.jpg"
+      },
+      {
+        "id": "a004",
+        "name": "Cycling Gloves",
+        "category": "Accessories",
+        "price": 24.99,
+        "description": "Padded gloves for comfort and grip",
+        "specifications": {
+          "material": "Synthetic leather",
+          "padding": "Gel",
+          "closure": "Velcro"
+        },
+        "inStock": true,
+        "imageUrl": "/images/cycling-gloves.jpg"
+      },
+      {
+        "id": "a005",
+        "name": "Bike Repair Kit",
+        "category": "Accessories",
+        "price": 39.99,
+        "description": "Essential tools for basic bike maintenance and repair",
+        "specifications": {
+          "tools": "15 pieces",
+          "case": "Compact zipper case",
+          "includes": "Tire levers, multi-tool, patch kit"
+        },
+        "inStock": false,
+        "imageUrl": "/images/repair-kit.jpg"
+      }
+    ]
+  }

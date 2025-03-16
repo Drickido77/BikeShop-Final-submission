@@ -1,0 +1,79 @@
+{
+    "bikes": [
+      {
+        "id": "b001",
+        "name": "Apollo Mountain Pro",
+        "category": "Mountain Bikes",
+        "price": 599.99,
+        "description": "High-performance mountain bike with front suspension and disc brakes",
+        "specifications": {
+          "frame": "Aluminum",
+          "gears": "21-speed",
+          "brakes": "Hydraulic disc",
+          "wheelSize": "29-inch"
+        },
+        "inStock": true,
+        "imageUrl": "/images/apollo-mountain.jpg"
+      },
+      {
+        "id": "b002",
+        "name": "SpeedMaster Road Elite",
+        "category": "Road Bikes",
+        "price": 799.99,
+        "description": "Lightweight road bike designed for speed and endurance",
+        "specifications": {
+          "frame": "Carbon fiber",
+          "gears": "18-speed",
+          "brakes": "Caliper",
+          "wheelSize": "28-inch"
+        },
+        "inStock": true,
+        "imageUrl": "/images/speedmaster-road.jpg"
+      },
+      {
+        "id": "b003",
+        "name": "TrailBlazer X3",
+        "category": "Mountain Bikes",
+        "price": 649.99,
+        "description": "Durable mountain bike for rough terrain and trail riding",
+        "specifications": {
+          "frame": "Aluminum alloy",
+          "gears": "24-speed",
+          "brakes": "Mechanical disc",
+          "wheelSize": "27.5-inch"
+        },
+        "inStock": true,
+        "imageUrl": "/images/trailblazer-x3.jpg"
+      },
+      {
+        "id": "b004",
+        "name": "UrbanCruiser City",
+        "category": "City Bikes",
+        "price": 449.99,
+        "description": "Comfortable city bike for daily commuting",
+        "specifications": {
+          "frame": "Steel",
+          "gears": "7-speed",
+          "brakes": "V-brake",
+          "wheelSize": "26-inch"
+        },
+        "inStock": false,
+        "imageUrl": "/images/urbancruiser-city.jpg"
+      },
+      {
+        "id": "b005",
+        "name": "RoadRunner Pro",
+        "category": "Road Bikes",
+        "price": 899.99,
+        "description": "Professional-grade road bike for competitive cycling",
+        "specifications": {
+          "frame": "Carbon fiber",
+          "gears": "22-speed",
+          "brakes": "Hydraulic disc",
+          "wheelSize": "28-inch"
+        },
+        "inStock": true,
+        "imageUrl": "/images/roadrunner-pro.jpg"
+      }
+    ]
+  }
