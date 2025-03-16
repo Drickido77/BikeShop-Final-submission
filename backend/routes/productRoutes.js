@@ -3,14 +3,14 @@ const router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
-// Helper function to read JSON files
+//read JSON files
 const readJsonFile = (filename) => {
   const filePath = path.join(__dirname, '..', 'data', filename);
   const data = fs.readFileSync(filePath, 'utf8');
   return JSON.parse(data);
 };
 
-// Get all bikes
+// Will get bikes
 router.get('/bikes', (req, res) => {
   try {
     const bikeData = readJsonFile('bikes.json');
@@ -20,7 +20,7 @@ router.get('/bikes', (req, res) => {
   }
 });
 
-// Get all accessories
+// Gets my accessories
 router.get('/accessories', (req, res) => {
   try {
     const accessoryData = readJsonFile('accessories.json');
@@ -30,7 +30,7 @@ router.get('/accessories', (req, res) => {
   }
 });
 
-// Get bikes by category
+
 router.get('/bikes/category/:category', (req, res) => {
   try {
     const bikeData = readJsonFile('bikes.json');
@@ -46,7 +46,7 @@ router.get('/bikes/category/:category', (req, res) => {
   }
 });
 
-// Search products (both bikes and accessories)
+// Searchs for bikes and accessories
 router.get('/search', (req, res) => {
   try {
     const query = req.query.q ? req.query.q.toLowerCase() : '';
@@ -58,14 +58,14 @@ router.get('/search', (req, res) => {
     const bikeData = readJsonFile('bikes.json');
     const accessoryData = readJsonFile('accessories.json');
     
-    // Filter bikes based on query
+    // Filter 
     const filteredBikes = bikeData.bikes.filter(bike => 
       bike.name.toLowerCase().includes(query) || 
       bike.description.toLowerCase().includes(query) ||
       bike.category.toLowerCase().includes(query)
     );
     
-    // Filter accessories based on query
+    // Filter
     const filteredAccessories = accessoryData.accessories.filter(accessory => 
       accessory.name.toLowerCase().includes(query) || 
       accessory.description.toLowerCase().includes(query)
@@ -81,20 +81,20 @@ router.get('/search', (req, res) => {
   }
 });
 
-// Get product by ID (either bike or accessory)
+// Gets product by ID 
 router.get('/product/:id', (req, res) => {
   try {
     const productId = req.params.id;
     const bikeData = readJsonFile('bikes.json');
     const accessoryData = readJsonFile('accessories.json');
     
-    // Check if product is a bike
+    // Checks product
     const bike = bikeData.bikes.find(b => b.id === productId);
     if (bike) {
       return res.json({ ...bike, type: 'bike' });
     }
     
-    // Check if product is an accessory
+    // Check product is accessory
     const accessory = accessoryData.accessories.find(a => a.id === productId);
     if (accessory) {
       return res.json({ ...accessory, type: 'accessory' });

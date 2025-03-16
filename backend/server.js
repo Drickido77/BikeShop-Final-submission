@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-// Serve static files (for development)
+
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 // Routes
